@@ -26,7 +26,7 @@ public class exercise5 {
         }
         else
         {
-            System.out.println(" the number "+ userInput + " doesn't belongs to fibonacci arithmetic progression");
+            System.out.println(" the number "+ userInput + " doesn't belong to fibonacci arithmetic progression");
         }
     }
 }
