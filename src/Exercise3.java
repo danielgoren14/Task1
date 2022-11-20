@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercise3 {
+public class Exercise3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int oddnumber;
@@ -12,23 +12,18 @@ public class exercise3 {
             for (int x = 0; x < (oddnumber - i) / 25; x++) {
                 System.out.print(" ");
             }
-
             for(int j = 1; j<=i;j++) {
                 System.out.print("*");
             }
-
             System.out.println("");
-
         }
         for(int k = oddnumber - 2; k >=1;k-=2){
             for (int z = 0; z < (oddnumber - k) / 2; z++){
                 System.out.print(" ");
             }
-
             for(int m = 1; m<=k;m++){
                 System.out.print("*");
             }
-
             System.out.println("");
         }
     }

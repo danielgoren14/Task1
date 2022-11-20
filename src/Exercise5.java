@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercise5 {
+public class Exercise5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int userInput;
@@ -18,7 +18,6 @@ public class exercise5 {
         }
         if(nextNumber == userInput)
         {
-
             System.out.println("The number "+ userInput +" belongs to fibonacci arithmetic progression");
         }
         else
