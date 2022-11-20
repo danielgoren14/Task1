@@ -10,20 +10,20 @@ public class exercise5 {
         } while (userInput < 0);
         int number1 = 0;
         int number2 = 1;
-        int number3 = 0;
-        while(number3 < userInput){
-            number3 = number1 + number2;
+        int nextNumber = 0;
+        while(nextNumber < userInput){
+            nextNumber = number1 + number2;
             number1 = number2;
-            number2 = number3;
+            number2 = nextNumber;
         }
-        if(number3 == userInput)
+        if(nextNumber == userInput)
         {
 
-            System.out.println("the number "+ userInput +" belongs to fibonacci arithmetic progression");
+            System.out.println("The number "+ userInput +" belongs to fibonacci arithmetic progression");
         }
         else
         {
-            System.out.println("the number "+ userInput + " doesn't belong to fibonacci arithmetic progression");
+            System.out.println("The number "+ userInput + " doesn't belong to fibonacci arithmetic progression");
         }
     }
 }
