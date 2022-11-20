@@ -2,19 +2,15 @@ import java.util.Scanner;
 
 public class exercise6 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int userInput;
-        do{
-            System.out.println("Please enter a positive number");
-            userInput = scanner.nextInt();
-        }while(userInput <= 0);
+        Scanner scan = new Scanner(System.in);
+        int numberFromUser;
         int sum = 0;
-        int modulu;
-        while(userInput > 0) {
-            modulu = userInput % 10;
-            sum += modulu;
-            userInput = userInput / 10;
-        }
-        System.out.println("The sum of the digits of this number is "+ sum);
+        System.out.println("please enter a number");
+        numberFromUser = scan.nextInt();
+        do {
+            sum += numberFromUser % 10;
+            numberFromUser /= 10;
+        } while (numberFromUser > 0);
+        System.out.print("the sum is:" + sum);
     }
 }
