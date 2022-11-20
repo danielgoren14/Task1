@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercise1 {
+public class quadraticEquation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int coefficient1;
