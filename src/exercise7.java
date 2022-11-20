@@ -1,36 +1,25 @@
-
-public class exercise7
-{
+public class exercise7 {
     public static void main(String[]args) {
         int sum;
         int firstDigit;
         int secondDigit;
-        int thirdDigit = 0;
-        int fourthDigit = 0;
+        int thirdDigit;
         int checkedNumber;
 
         for (int i = 1; i <= 9; i++){
-            System.out.print(i + " ");
+            System.out.print(i + "\t");
         }
 
-
-        for (int i = 10; i <= 1000; i++) {
+        for (int i = 100; i <= 999; i++) {
             checkedNumber = i;
             firstDigit = ((checkedNumber % 10) * (checkedNumber % 10) * (checkedNumber % 10));
             checkedNumber /= 10;
             secondDigit = ((checkedNumber % 10) * (checkedNumber % 10) * (checkedNumber % 10));
             checkedNumber /= 10;
-            if(i >= 100 && i <=999){
-                thirdDigit = ((checkedNumber % 10) * (checkedNumber % 10) * (checkedNumber % 10));
-
-            }
-            if(i == 1000) {
-                checkedNumber /= 10;
-                fourthDigit = ((checkedNumber % 10) * (checkedNumber % 10) * (checkedNumber % 10) * (checkedNumber % 10));
-            }
-            sum = firstDigit + secondDigit + thirdDigit + fourthDigit;
+            thirdDigit = ((checkedNumber % 10) * (checkedNumber % 10) * (checkedNumber % 10));
+            sum = firstDigit + secondDigit + thirdDigit;
             if (sum == i) {
-                System.out.print(i + " ");
+                System.out.print(i + "\t");
             }
         }
     }
