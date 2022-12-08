@@ -9,7 +9,7 @@ public class Exercise3 {
             oddnumber = scanner.nextInt();
         } while (oddnumber <= 3 || oddnumber % 2 == 0);
         for (int i = 1; i <= oddnumber; i+=2) {
-            for (int x = 0; x < (oddnumber - i) / 25; x++) {
+            for (int x = 0; x < (oddnumber - i) / 2; x++) {
                 System.out.print(" ");
             }
             for(int j = 1; j<=i;j++) {
